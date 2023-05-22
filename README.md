@@ -1,4 +1,4 @@
-The hello-world project
+The example project on Mediator Pattern
 
 <div align="center">
     <img src="./assets/images/hello_world.png"/>
@@ -11,7 +11,7 @@ Make sure following software is installed on your PC
 ## Project structure
 ```
 .
-├── hello-world
+├── mediator-pattern
 │   ├── pom.xml
 │   ...
 ├── pom.xml
@@ -23,13 +23,13 @@ Make sure following software is installed on your PC
 
 ```shell
 $ ./mvnw clean package
-$ java -jar ./hello-world/target/hello-world-0.0.1-SNAPSHOT.jar
-```
-
-```shell
-Compare str1==str2: true
-Compare str3==str4: false
-Compare value str1.equals(str3): true
+$ java -jar ./mediator-pattern/target/mediator-pattern-0.0.1-SNAPSHOT.jar
+16:47:45.515 [main] INFO io.github.huypva.mediatorpattern.Main -- Concrete1Colleague action
+16:47:45.517 [main] INFO io.github.huypva.mediatorpattern.BaseColleague -- Colleague Concrete1 action 1
+16:47:45.518 [main] INFO io.github.huypva.mediatorpattern.BaseColleague -- Colleague Concrete2 action 2
+16:47:45.518 [main] INFO io.github.huypva.mediatorpattern.Main -- Concrete2Colleague action
+16:47:45.518 [main] INFO io.github.huypva.mediatorpattern.BaseColleague -- Colleague Concrete2 action 1
+16:47:45.518 [main] INFO io.github.huypva.mediatorpattern.BaseColleague -- Colleague Concrete1 action 2
 ```
 
 ## Contribute
@@ -43,3 +43,5 @@ The code is open sourced. I encourage fellow developers to contribute and help i
 - Create new Pull Request
 
 ## Reference
+- https://en.wikipedia.org/wiki/Mediator_pattern
+- https://refactoring.guru/design-patterns/mediator
